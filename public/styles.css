@@ -1,0 +1,95 @@
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: whitesmoke;
+}
+
+#message-container {
+    width: 80%;
+    max-width: 1200px;
+    padding: 30px 0px;
+    margin-bottom: 3em;
+}
+
+#message{
+    display:inline-block;
+    clear: both;
+    padding: 10px;
+    border-radius: 30px;
+    margin-bottom: 2px;
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: center;
+}
+
+.them{
+    background: #eee;
+    float: left;
+}
+
+.me{
+    float: right;
+    background: #0084ff;
+    color: #fff;
+}
+
+.them + .me{
+    border-bottom-right-radius: 5px;
+}
+
+.me + .me{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.me:last-of-type {
+    border-bottom-right-radius: 30px;
+}        
+
+.system {
+    float: right;
+    background: whitesmoke;
+    color: #555;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    font-size: 0.8em;
+}
+
+#send-container {
+    position: fixed;
+    margin: 30px 0px;
+    bottom: 0;
+    background-color: floralwhite;
+    max-width: 1200px;
+    width: 80%;
+    display: flex;
+}
+
+#message-input {
+    flex-grow: 1;
+}
+
+.myButton {
+    background-color:#44c767;
+    border:none;
+    border-radius:5px;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    text-decoration:none;
+    text-shadow:0px -1px 50px #2f6627;
+}
+
+.myButton:hover {
+    background-color:#55d878;
+}
+
+.myButton:active {
+    position:relative;
+    top:1px;
+}
+
